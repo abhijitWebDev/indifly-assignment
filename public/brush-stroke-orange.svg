@@ -1,0 +1,5 @@
+<svg width="400" height="80" viewBox="0 0 400 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Orange brush stroke background -->
+  <path d="M 10,40 Q 50,20 100,35 T 200,40 T 300,38 T 390,40" stroke="#FF6B35" stroke-width="60" stroke-linecap="round" fill="none" opacity="0.9"/>
+  <path d="M 15,42 Q 55,25 105,37 T 205,42 T 305,40 T 385,42" stroke="#FF7F50" stroke-width="45" stroke-linecap="round" fill="none" opacity="0.7"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg width="206" height="179" viewBox="0 0 206 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.3">
+    <!-- 3D Geometric diamond wireframe shape -->
+    <path d="M103 5 L180 60 L180 120 L103 174 L26 120 L26 60 Z" stroke="#4A9EFF" stroke-width="1.5" fill="none"/>
+    <path d="M103 5 L103 90" stroke="#4A9EFF" stroke-width="1.5" fill="none"/>
+    <path d="M103 90 L26 60" stroke="#4A9EFF" stroke-width="1.5" fill="none"/>
+    <path d="M103 90 L180 60" stroke="#4A9EFF" stroke-width="1.5" fill="none"/>
+    <path d="M103 90 L26 120" stroke="#4A9EFF" stroke-width="1.5" fill="none"/>
+    <path d="M103 90 L180 120" stroke="#4A9EFF" stroke-width="1.5" fill="none"/>
+    <path d="M103 90 L103 174" stroke="#4A9EFF" stroke-width="1.5" fill="none"/>
+    <circle cx="103" cy="5" r="3" fill="#4A9EFF"/>
+    <circle cx="180" cy="60" r="3" fill="#4A9EFF"/>
+    <circle cx="180" cy="120" r="3" fill="#4A9EFF"/>
+    <circle cx="103" cy="174" r="3" fill="#4A9EFF"/>
+    <circle cx="26" cy="120" r="3" fill="#4A9EFF"/>
+    <circle cx="26" cy="60" r="3" fill="#4A9EFF"/>
+    <circle cx="103" cy="90" r="3" fill="#4A9EFF"/>
+  </g>
+</svg>

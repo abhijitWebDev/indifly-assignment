@@ -1,0 +1,18 @@
+<svg width="270" height="234" viewBox="0 0 270 234" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.3">
+    <!-- 3D Geometric wireframe shape -->
+    <path d="M135 10 L230 70 L230 150 L135 210 L40 150 L40 70 Z" stroke="#4A9EFF" stroke-width="1.5" fill="none"/>
+    <path d="M135 10 L135 210" stroke="#4A9EFF" stroke-width="1.5" fill="none"/>
+    <path d="M40 70 L230 150" stroke="#4A9EFF" stroke-width="1.5" fill="none"/>
+    <path d="M230 70 L40 150" stroke="#4A9EFF" stroke-width="1.5" fill="none"/>
+    <path d="M40 70 L135 10 L230 70 L135 130 Z" stroke="#4A9EFF" stroke-width="1.5" fill="none"/>
+    <path d="M40 150 L135 90 L230 150 L135 210 Z" stroke="#4A9EFF" stroke-width="1.5" fill="none"/>
+    <circle cx="135" cy="10" r="3" fill="#4A9EFF"/>
+    <circle cx="230" cy="70" r="3" fill="#4A9EFF"/>
+    <circle cx="230" cy="150" r="3" fill="#4A9EFF"/>
+    <circle cx="135" cy="210" r="3" fill="#4A9EFF"/>
+    <circle cx="40" cy="150" r="3" fill="#4A9EFF"/>
+    <circle cx="40" cy="70" r="3" fill="#4A9EFF"/>
+    <circle cx="135" cy="130" r="3" fill="#4A9EFF"/>
+  </g>
+</svg>
