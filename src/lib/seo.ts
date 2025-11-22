@@ -3,7 +3,8 @@ import { Metadata } from 'next'
 export const siteConfig = {
   name: 'Indify',
   description: 'A venture builder empowering mission-driven founders with resources, functional expertise and strategic partnerships to dream, build, and grow ventures in Bharat.',
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
+  url: process.env.NEXT_PUBLIC_SITE_URL ||
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000'),
   ogImage: '/og-image.png',
   twitterImage: '/twitter-image.png',
   twitterHandle: '@indify',
