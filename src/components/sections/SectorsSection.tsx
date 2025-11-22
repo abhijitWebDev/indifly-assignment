@@ -111,19 +111,19 @@ function SectorsSection() {
   const currentBrand = currentSector?.brands.find((b) => b.id === activeBrand);
 
   return (
-    <section className="relative w-full min-h-[900px] bg-white py-16 overflow-hidden">
+    <section className="relative w-full min-h-[600px] sm:min-h-[700px] md:min-h-[800px] lg:min-h-[900px] bg-white py-8 sm:py-12 md:py-16 overflow-hidden">
       {/* Decorative circle - top left */}
-      <div className="absolute -left-[389px] -top-[356px] w-[630px] h-[630px] rotate-[71.579deg]">
+      <div className="hidden md:block absolute -left-[389px] -top-[356px] w-[630px] h-[630px] rotate-[71.579deg]">
         <div className="w-full h-full rounded-[83px] bg-gradient-to-br from-orange-100 to-transparent opacity-30" />
       </div>
 
       {/* Content Container */}
-      <div className="relative max-w-[1200px] mx-auto px-8">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-8 sm:mb-10 md:mb-12">
           {/* Our Sectors Title with brush stroke */}
-          <div className="relative inline-block mb-6">
-            <div className="absolute inset-0 -inset-x-12">
+          <div className="relative inline-block mb-4 sm:mb-6">
+            <div className="absolute inset-0 -inset-x-8 sm:-inset-x-12">
               <Image
                 src="/brush-stroke-orange.svg"
                 alt=""
@@ -131,26 +131,26 @@ function SectorsSection() {
                 className="object-contain"
               />
             </div>
-            <h2 className="relative font-montserrat font-bold text-[32px] text-white px-12 py-2">
+            <h2 className="relative font-montserrat font-bold text-[24px] sm:text-[28px] md:text-[32px] text-white px-8 sm:px-12 py-2">
               Our Sectors
             </h2>
           </div>
 
           {/* Subtitle */}
-          <p className="font-montserrat font-bold text-[20px] mb-4">
+          <p className="font-montserrat font-bold text-[16px] sm:text-[18px] md:text-[20px] mb-3 sm:mb-4">
             <span className="text-[#e04a00]">Integrated,</span>{' '}
             <span className="text-[#0252d4]">Inclusive</span>{' '}
             <span className="text-[#ff915c]">& Innovative</span>
           </p>
 
           {/* Description */}
-          <p className="font-montserrat text-[16px] text-[#353636] max-w-[858px] mx-auto">
+          <p className="font-montserrat text-[14px] sm:text-[15px] md:text-[16px] text-[#353636] max-w-[858px] mx-auto px-4">
             Equipping diverse brands in multiple sectors with essential resources, expertise, and unwavering support
           </p>
         </div>
 
         {/* Main Sector Tabs */}
-        <div className="flex items-center justify-center gap-6 mb-8">
+        <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 md:gap-6 mb-6 sm:mb-8">
           {sectorsData.map((sector) => (
             <button
               key={sector.id}
@@ -161,12 +161,12 @@ function SectorsSection() {
                 }
               }}
               className={`
-                px-8 py-3 rounded-[16px] font-montserrat font-bold text-[16px] h-[48px]
+                px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-[16px] font-montserrat font-bold text-[14px] sm:text-[15px] md:text-[16px] h-[40px] sm:h-[44px] md:h-[48px]
                 transition-all duration-200
                 ${
                   activeSector === sector.id
                     ? 'bg-gradient-to-r from-[#006fff] to-[#0b44ff] text-white'
-                    : 'bg-[#e6eaef] text-[#446fa7] hover:bg-[#d6dae f]'
+                    : 'bg-[#e6eaef] text-[#446fa7] hover:bg-[#d6daef]'
                 }
               `}
             >
@@ -177,17 +177,17 @@ function SectorsSection() {
 
         {/* Content Area */}
         {currentBrand && (
-          <div className="relative flex items-start gap-8 mt-12">
+          <div className="relative flex flex-col lg:flex-row items-start gap-6 sm:gap-8 mt-8 sm:mt-10 md:mt-12">
             {/* Left Card */}
-            <div className="w-[690px] bg-gradient-to-br from-[#fff5f0] to-[#ffe8dc] rounded-[16px] p-6 relative">
+            <div className="w-full lg:w-[690px] bg-gradient-to-br from-[#fff5f0] to-[#ffe8dc] rounded-[16px] p-4 sm:p-5 md:p-6 relative">
               {/* Brand Tabs */}
-              <div className="flex gap-2 mb-6">
+              <div className="flex flex-wrap gap-2 mb-4 sm:mb-6">
                 {currentSector?.brands.map((brand) => (
                   <button
                     key={brand.id}
                     onClick={() => setActiveBrand(brand.id)}
                     className={`
-                      px-4 py-1 rounded-[8px] font-montserrat font-medium text-[14px]
+                      px-3 sm:px-4 py-1 rounded-[8px] font-montserrat font-medium text-[12px] sm:text-[14px]
                       transition-all duration-200
                       ${
                         activeBrand === brand.id
@@ -203,23 +203,23 @@ function SectorsSection() {
 
               {/* Category Badge */}
               <p
-                className={`font-montserrat font-bold text-[16px] mb-4 bg-gradient-to-r ${currentBrand.categoryGradient} bg-clip-text text-transparent`}
+                className={`font-montserrat font-bold text-[14px] sm:text-[16px] mb-3 sm:mb-4 bg-gradient-to-r ${currentBrand.categoryGradient} bg-clip-text text-transparent`}
               >
                 {currentBrand.category}
               </p>
 
               {/* Title */}
-              <h3 className="font-montserrat text-[20px] text-[#353636] mb-4 leading-tight">
+              <h3 className="font-montserrat text-[18px] sm:text-[19px] md:text-[20px] text-[#353636] mb-3 sm:mb-4 leading-tight">
                 {currentBrand.title}
               </h3>
 
               {/* Description */}
-              <p className="font-montserrat text-[14px] text-[#353636] mb-6 leading-tight">
+              <p className="font-montserrat text-[13px] sm:text-[14px] text-[#353636] mb-4 sm:mb-6 leading-tight">
                 {currentBrand.description}
               </p>
 
               {/* Features List */}
-              <ul className="font-montserrat font-semibold text-[14px] text-[#4e5155] mb-8 space-y-1">
+              <ul className="font-montserrat font-semibold text-[12px] sm:text-[14px] text-[#4e5155] mb-6 sm:mb-8 space-y-1">
                 {currentBrand.features.map((feature, idx) => (
                   <li key={idx} className="ml-5 list-disc">
                     {feature}
@@ -228,11 +228,11 @@ function SectorsSection() {
               </ul>
 
               {/* Buttons */}
-              <div className="flex gap-4">
-                <button className="bg-[#ff681e] border border-[#e04a00] text-white px-6 py-3 rounded-[50px] font-montserrat font-semibold text-[12px] h-[54px] w-[162px] hover:bg-[#e04a00] transition-colors">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                <button className="bg-[#ff681e] border border-[#e04a00] text-white px-6 py-3 rounded-[50px] font-montserrat font-semibold text-[12px] h-[54px] w-full sm:w-[162px] hover:bg-[#e04a00] transition-colors">
                   Install the App
                 </button>
-                <button className="border border-[#353636] text-[#353636] px-6 py-3 rounded-[50px] font-montserrat font-semibold text-[12px] h-[54px] w-[162px] hover:bg-[#353636]/10 transition-colors flex items-center justify-center gap-2">
+                <button className="border border-[#353636] text-[#353636] px-6 py-3 rounded-[50px] font-montserrat font-semibold text-[12px] h-[54px] w-full sm:w-[162px] hover:bg-[#353636]/10 transition-colors flex items-center justify-center gap-2">
                   <span>Explore More</span>
                   <Image src="/arrow-icon.svg" alt="" width={16} height={16} />
                 </button>
@@ -240,15 +240,15 @@ function SectorsSection() {
             </div>
 
             {/* Right Visual Section */}
-            <div className="relative w-[426px] h-[395px] flex-shrink-0">
+            <div className="relative w-full max-w-[426px] h-[300px] sm:h-[350px] lg:h-[395px] mx-auto lg:mx-0 flex-shrink-0">
               {/* Gradient Background */}
               <div className="absolute inset-0 bg-gradient-to-br from-[#fff5f0] via-[#ffe8dc] to-[#ffd4ba] rounded-[24px] -z-10" />
 
               {/* Circular border background */}
-              <div className="absolute left-0 top-[36px] w-[359px] h-[359px] rounded-full border-[50px] border-[#ffe1d0] z-0" />
+              <div className="absolute left-1/2 -translate-x-1/2 lg:left-0 lg:translate-x-0 top-[20px] sm:top-[30px] lg:top-[36px] w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] lg:w-[359px] lg:h-[359px] rounded-full border-[35px] sm:border-[40px] lg:border-[50px] border-[#ffe1d0] z-0" />
 
               {/* Top-Left Icon (largest, behind person) */}
-              <div className="absolute left-[61px] top-[58px] w-[130px] h-[130px] z-[1]">
+              <div className="absolute left-[15%] sm:left-[12%] lg:left-[61px] top-[30px] sm:top-[45px] lg:top-[58px] w-[90px] h-[90px] sm:w-[110px] sm:h-[110px] lg:w-[130px] lg:h-[130px] z-[1]">
                 <Image
                   src={currentBrand.icons.find(i => i.position === 'tl')?.src || '/Frame 1000001149.svg'}
                   alt=""
@@ -259,7 +259,7 @@ function SectorsSection() {
               </div>
 
               {/* Bottom-Left Icon (small, behind person) */}
-              <div className="absolute left-[17px] top-[201px] w-[89px] h-[89px] z-[1]">
+              <div className="absolute left-[5%] sm:left-[8%] lg:left-[17px] top-[150px] sm:top-[175px] lg:top-[201px] w-[60px] h-[60px] sm:w-[75px] sm:h-[75px] lg:w-[89px] lg:h-[89px] z-[1]">
                 <Image
                   src={currentBrand.icons.find(i => i.position === 'bl')?.src || '/Frame 1000001150.svg'}
                   alt=""
@@ -270,7 +270,7 @@ function SectorsSection() {
               </div>
 
               {/* Person Image - in middle layer */}
-              <div className="absolute left-[41px] bottom-px w-[350px] h-[329px] overflow-hidden pointer-events-none z-[5]">
+              <div className="absolute left-1/2 -translate-x-1/2 lg:left-[41px] lg:translate-x-0 bottom-0 w-[250px] h-[235px] sm:w-[300px] sm:h-[282px] lg:w-[350px] lg:h-[329px] overflow-hidden pointer-events-none z-[5]">
                 <div className="absolute inset-0">
                   <Image
                     src={currentBrand.personImage}
@@ -289,7 +289,7 @@ function SectorsSection() {
               </div>
 
               {/* Top-Right Icon (medium, in front of person) */}
-              <div className="absolute left-[243px] top-[40px] w-[106px] h-[106px] z-[10]">
+              <div className="absolute right-[10%] sm:right-[12%] lg:left-[243px] top-[20px] sm:top-[30px] lg:top-[40px] w-[75px] h-[75px] sm:w-[90px] sm:h-[90px] lg:w-[106px] lg:h-[106px] z-[10]">
                 <Image
                   src={currentBrand.icons.find(i => i.position === 'tr')?.src || '/Frame 1000001151.svg'}
                   alt=""
@@ -300,7 +300,7 @@ function SectorsSection() {
               </div>
 
               {/* Bottom-Right Icon (medium, in front of person) */}
-              <div className="absolute left-[306px] top-[177px] w-[106px] h-[106px] z-[10]">
+              <div className="absolute right-[5%] sm:right-[8%] lg:left-[306px] top-[130px] sm:top-[155px] lg:top-[177px] w-[75px] h-[75px] sm:w-[90px] sm:h-[90px] lg:w-[106px] lg:h-[106px] z-[10]">
                 <Image
                   src={currentBrand.icons.find(i => i.position === 'br')?.src || '/Frame 1000001153.svg'}
                   alt=""

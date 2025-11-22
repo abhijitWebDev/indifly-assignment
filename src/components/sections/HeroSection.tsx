@@ -6,13 +6,13 @@ function HeroSection() {
   return (
     <>
       {/* Top Banner */}
-      <div className="w-full h-9 p-2.5 bg-linear-to-r from-sky-800 to-orange-600 flex justify-center items-center gap-2.5 overflow-hidden">
-        <div className="text-center">
-          <span className="text-white text-sm font-medium font-['Montserrat'] leading-6">
+      <div className="w-full min-h-9 p-2.5 bg-linear-to-r from-sky-800 to-orange-600 flex justify-center items-center gap-2.5 overflow-hidden">
+        <div className="text-center px-2">
+          <span className="text-white text-xs sm:text-sm font-medium font-['Montserrat'] leading-5 sm:leading-6">
             Get your business up & running with our unparalleled expertise | Use
             Code:{' '}
           </span>
-          <span className="text-white text-sm font-extrabold font-['Montserrat'] leading-6">
+          <span className="text-white text-xs sm:text-sm font-extrabold font-['Montserrat'] leading-5 sm:leading-6">
             WelcomeInd.
           </span>
         </div>
@@ -69,18 +69,20 @@ function HeroSection() {
         </div>
 
         {/* Content */}
-        <div className="relative z-20 flex flex-col items-center justify-between h-screen text-white px-4">
+        <div className="relative z-20 flex flex-col items-center justify-between h-screen text-white px-4 sm:px-6 md:px-8">
           {/* Hero Text */}
-          <div className="flex flex-col items-center justify-center flex-1 pt-32">
-            <h1 className="text-5xl md:text-7xl font-bold text-center mb-6">
+          <div className="flex flex-col items-center justify-center flex-1 pt-20 sm:pt-24 md:pt-32">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center mb-4 sm:mb-6 px-2">
               Building <span className="text-[#E04A00]">Ventures,</span> Building <span className="text-[#E04A00]">Nation.</span>
             </h1>
-            <h3 className="text-2xl text-center">A venture builder empowering mission-driven founders with resources, functional</h3>
-            <h3 className="text-2xl text-center">expertise and strategic partnerships to <span className="text-[#E04A00]">dream, build, and grow.</span></h3>
+            <h3 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-center max-w-4xl px-4">
+              A venture builder empowering mission-driven founders with resources, functional
+              expertise and strategic partnerships to <span className="text-[#E04A00]">dream, build, and grow.</span>
+            </h3>
           </div>
 
-          {/* Cards Section */}
-          <div className="relative w-full max-w-[915px] h-[339px] mb-20">
+          {/* Cards Section - Desktop (hidden on mobile/tablet) */}
+          <div className="hidden lg:block relative w-full max-w-[915px] h-[339px] mb-20">
             {/* Our Ventures Card */}
             <div className="absolute h-[339px] w-[356px] rounded-[16px] overflow-hidden top-0 bg-gradient-to-br from-[#f5e6d3] to-[#e8d4ba]" style={{ left: 'calc(50% - 279.5px)', transform: 'translateX(-50%)' }}>
               {/* Heading */}
@@ -161,6 +163,44 @@ function HeroSection() {
                     top: '-4.57%'
                   }}
                 />
+              </div>
+            </div>
+          </div>
+
+          {/* Cards Section - Mobile/Tablet (shown on mobile/tablet only) */}
+          <div className="lg:hidden w-full max-w-md mb-12 space-y-4 px-4">
+            {/* Our Ventures Card */}
+            <div className="bg-gradient-to-br from-[#f5e6d3] to-[#e8d4ba] rounded-[16px] p-6">
+              <h2 className="font-montserrat font-bold text-[24px] sm:text-[28px] leading-tight text-[#01295c] mb-0">Our</h2>
+              <h2 className="font-montserrat font-bold italic text-[32px] sm:text-[36px] leading-tight bg-gradient-to-r from-[#006fff] to-[#8ec0ff] bg-clip-text text-transparent mb-4">Ventures</h2>
+              <p className="text-[14px] font-montserrat text-[#353636] mb-4">
+                Learn more about our portfolio brands in the <span className="font-bold">BFSI sector</span> in India.
+              </p>
+              <button className="bg-[#024397] border border-[#0252d4] text-white w-full sm:w-[162px] h-[54px] rounded-[50px] flex items-center justify-center gap-[10px] hover:bg-[#0252d4] transition-colors">
+                <span className="font-montserrat font-semibold text-[12px] whitespace-nowrap">Know More</span>
+                <Image src="/arrow-icon.svg" alt="" width={16} height={16} className="w-4 h-4" />
+              </button>
+            </div>
+
+            {/* inCORE and INDsights Cards */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="h-[140px] bg-[#e04a00] border border-[#e04a00] rounded-[16px] flex items-center justify-center cursor-pointer hover:bg-[#c93f00] transition-colors">
+                <Image src="/incore-logo.svg" alt="inCORE" width={120} height={30} />
+              </div>
+              <div className="h-[140px] border border-[#c5d9f2] rounded-[16px] flex items-center justify-center cursor-pointer" style={{ background: 'linear-gradient(135deg, #2b7de9 0%, #1e6fd9 100%)' }}>
+                <p className="font-montserrat font-extrabold italic text-white text-[24px] text-center">INDsights</p>
+              </div>
+            </div>
+
+            {/* Become Partner and Get in Touch Cards */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="h-[140px] border border-white rounded-[16px] bg-gradient-to-br from-[#e8f4ff] to-white flex flex-col items-center justify-center p-4 cursor-pointer">
+                <h3 className="font-montserrat font-bold text-[20px] leading-tight text-[#01295c]">Become our</h3>
+                <h3 className="font-montserrat font-bold italic text-[24px] leading-tight bg-gradient-to-r from-[#006fff] to-[#8ec0ff] bg-clip-text text-transparent">Partner</h3>
+              </div>
+              <div className="h-[140px] bg-white border border-[#ffc6a9] rounded-[16px] flex flex-col items-center justify-center p-4 cursor-pointer hover:border-[#E04A00] transition-all">
+                <h3 className="font-montserrat font-bold text-[20px] leading-tight text-[#01295c]">Get in</h3>
+                <h3 className="font-montserrat font-bold text-[24px] leading-tight text-[#E04A00]">Touch</h3>
               </div>
             </div>
           </div>

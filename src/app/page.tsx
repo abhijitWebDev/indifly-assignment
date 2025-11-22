@@ -13,7 +13,7 @@ export default function Home() {
     <HeroSection />
     <MissionSection />
     <SectorsSection />
-    {/*<ContactSection />*/}
+    <ContactSection />
   </div>
 </main>
   );
