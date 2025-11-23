@@ -207,6 +207,7 @@ function SectorsSection() {
                 src="/brush-stroke-orange.svg"
                 alt=""
                 fill
+                loading="lazy"
                 className="object-contain"
               />
             </div>
@@ -313,7 +314,7 @@ function SectorsSection() {
                 </button>
                 <button className="border border-[#353636] text-[#353636] px-6 py-3 rounded-[50px] font-montserrat font-semibold text-[12px] h-[54px] w-full sm:w-[162px] hover:bg-[#353636]/10 transition-colors flex items-center justify-center gap-2">
                   <span>Explore More</span>
-                  <Image src="/arrow-icon.svg" alt="" width={16} height={16} />
+                  <Image src="/arrow-icon.svg" alt="" width={16} height={16} loading="lazy" />
                 </button>
               </div>
             </div>
@@ -333,6 +334,7 @@ function SectorsSection() {
                   alt=""
                   width={130}
                   height={130}
+                  loading="lazy"
                   className="object-contain"
                 />
               </div>
@@ -344,6 +346,7 @@ function SectorsSection() {
                   alt=""
                   width={89}
                   height={89}
+                  loading="lazy"
                   className="object-contain"
                 />
               </div>
@@ -355,6 +358,7 @@ function SectorsSection() {
                   alt=""
                   width={106}
                   height={106}
+                  loading="lazy"
                   className="object-contain"
                 />
               </div>
@@ -377,6 +381,7 @@ function SectorsSection() {
                     alt="Business professional"
                     width={495}
                     height={330}
+                    loading="lazy"
                     className="absolute max-w-none object-cover"
                     style={
                       activeBrand === 'indinxt'
@@ -427,6 +432,7 @@ function SectorsSection() {
                       alt=""
                       width={215}
                       height={129}
+                      loading="lazy"
                       className="object-cover w-full h-full"
                     />
                   </div>
@@ -436,6 +442,7 @@ function SectorsSection() {
                     alt=""
                     width={106}
                     height={106}
+                    loading="lazy"
                     className="object-contain"
                   />
                 )}

@@ -163,17 +163,17 @@ export default function ContactSection() {
       <section className="relative w-full min-h-[700px] sm:min-h-[750px] md:min-h-[802px] bg-[#01295c] overflow-hidden py-12 sm:py-16 md:py-20">
         {/* Decorative Vector - Top Right */}
         <div className="hidden md:block absolute right-[-50px] lg:right-[50px] top-[28px] w-[250px] h-[250px] lg:w-[308px] lg:h-[303px] opacity-60">
-          <Image src="/contact-vector-1.svg" alt="" width={308} height={303} className="w-full h-full" />
+          <Image src="/contact-vector-1.svg" alt="" width={308} height={303} loading="lazy" className="w-full h-full" />
         </div>
 
         {/* Decorative Vector - Top Center Small */}
         <div className="hidden lg:block absolute left-[636px] top-[213px] w-[24px] h-[24px] opacity-50">
-          <Image src="/contact-vector-3.svg" alt="" width={24} height={24} className="w-full h-full" />
+          <Image src="/contact-vector-3.svg" alt="" width={24} height={24} loading="lazy" className="w-full h-full" />
         </div>
 
         {/* Decorative Vector - Bottom Left */}
         <div className="hidden md:block absolute left-[-30px] lg:left-[12px] bottom-[100px] lg:bottom-[196px] w-[150px] h-[150px] lg:w-[193px] lg:h-[190px] opacity-50">
-          <Image src="/contact-vector-2.svg" alt="" width={193} height={190} className="w-full h-full" />
+          <Image src="/contact-vector-2.svg" alt="" width={193} height={190} loading="lazy" className="w-full h-full" />
         </div>
 
         {/* Content Container */}
@@ -195,7 +195,7 @@ export default function ContactSection() {
                 {/* Address */}
                 <div className="flex gap-4 items-start">
                   <div className="w-[22px] h-[21px] mt-1 flex-shrink-0">
-                    <Image src="/location-icon.svg" alt="Location" width={22} height={21} className="w-full h-full" />
+                    <Image src="/location-icon.svg" alt="Location" width={22} height={21} loading="lazy" className="w-full h-full" />
                   </div>
                   <div className="space-y-1">
                     <p className="font-montserrat text-[18px] sm:text-[20px] text-white leading-[1.45] m-0">4074 Ebert Summit Suite 375</p>

@@ -45,6 +45,7 @@ function HeroSection() {
               alt=""
               width={270}
               height={234}
+              loading="lazy"
               className="w-full h-full"
             />
           </div>
@@ -58,6 +59,7 @@ function HeroSection() {
               alt=""
               width={206}
               height={179}
+              loading="lazy"
               className="w-full h-full"
             />
           </div>
@@ -101,7 +103,7 @@ function HeroSection() {
               {/* Button */}
               <button className="absolute left-[32px] top-[255px] bg-[#024397] border border-[#0252d4] border-solid text-white w-[162px] h-[54px] rounded-[50px] flex items-center justify-center gap-[10px] p-[10px] hover:bg-[#0252d4] transition-colors">
                 <span className="font-montserrat font-semibold text-[12px] leading-[17px] whitespace-nowrap">Know More</span>
-                <Image src="/arrow-icon.svg" alt="" width={16} height={16} className="w-4 h-4" />
+                <Image src="/arrow-icon.svg" alt="" width={16} height={16} loading="lazy" className="w-4 h-4" />
               </button>
             </div>
 
@@ -110,7 +112,7 @@ function HeroSection() {
               {/* inCORE Card */}
               <div className="flex-1 h-[165px] bg-[#e04a00] border border-[#e04a00] border-solid rounded-[16px] overflow-hidden relative cursor-pointer hover:bg-[#c93f00] transition-colors">
                 <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[156px] h-[35px] flex items-center justify-center">
-                  <Image src="/incore-logo.svg" alt="inCORE" width={156} height={35} className="w-full h-full" />
+                  <Image src="/incore-logo.svg" alt="inCORE" width={156} height={35} loading="lazy" className="w-full h-full" />
                 </div>
               </div>
               {/* INDsights Card */}
@@ -129,7 +131,7 @@ function HeroSection() {
                   <h3 className="font-montserrat font-bold italic text-[40px] leading-[43px] bg-gradient-to-r from-[#006fff] to-[#8ec0ff] bg-clip-text text-transparent">Partner</h3>
                 </div>
                 <div className="absolute left-[249px] top-[85px] w-[31px] h-[31px]">
-                  <Image src="/arrow-icon.svg" alt="" width={31} height={31} className="w-full h-full" />
+                  <Image src="/arrow-icon.svg" alt="" width={31} height={31} loading="lazy" className="w-full h-full" />
                 </div>
               </div>
             </div>
@@ -142,7 +144,7 @@ function HeroSection() {
                   <h3 className="font-montserrat font-bold text-[40px] leading-[43px] text-[#E04A00]">Touch</h3>
                 </div>
                 <div className="absolute left-[157px] top-[85px] w-[31px] h-[31px]">
-                  <Image src="/arrow-icon.svg" alt="" width={31} height={31} className="w-full h-full" style={{ filter: 'brightness(0) saturate(100%) invert(30%) sepia(98%) saturate(2738%) hue-rotate(353deg) brightness(95%) contrast(101%)' }} />
+                  <Image src="/arrow-icon.svg" alt="" width={31} height={31} loading="lazy" className="w-full h-full" style={{ filter: 'brightness(0) saturate(100%) invert(30%) sepia(98%) saturate(2738%) hue-rotate(353deg) brightness(95%) contrast(101%)' }} />
                 </div>
               </div>
             </div>
@@ -155,6 +157,7 @@ function HeroSection() {
                   alt="Business professional"
                   width={586}
                   height={389}
+                  loading="lazy"
                   className="absolute max-w-none"
                   style={{
                     height: '129.83%',
@@ -178,14 +181,14 @@ function HeroSection() {
               </p>
               <button className="bg-[#024397] border border-[#0252d4] text-white w-full sm:w-[162px] h-[54px] rounded-[50px] flex items-center justify-center gap-[10px] hover:bg-[#0252d4] transition-colors">
                 <span className="font-montserrat font-semibold text-[12px] whitespace-nowrap">Know More</span>
-                <Image src="/arrow-icon.svg" alt="" width={16} height={16} className="w-4 h-4" />
+                <Image src="/arrow-icon.svg" alt="" width={16} height={16} loading="lazy" className="w-4 h-4" />
               </button>
             </div>
 
             {/* inCORE and INDsights Cards */}
             <div className="grid grid-cols-2 gap-4">
               <div className="h-[140px] bg-[#e04a00] border border-[#e04a00] rounded-[16px] flex items-center justify-center cursor-pointer hover:bg-[#c93f00] transition-colors">
-                <Image src="/incore-logo.svg" alt="inCORE" width={120} height={30} />
+                <Image src="/incore-logo.svg" alt="inCORE" width={120} height={30} loading="lazy" />
               </div>
               <div className="h-[140px] border border-[#c5d9f2] rounded-[16px] flex items-center justify-center cursor-pointer" style={{ background: 'linear-gradient(135deg, #2b7de9 0%, #1e6fd9 100%)' }}>
                 <p className="font-montserrat font-extrabold italic text-white text-[24px] text-center">INDsights</p>

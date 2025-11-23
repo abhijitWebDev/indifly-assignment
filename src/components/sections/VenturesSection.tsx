@@ -20,7 +20,7 @@ export default function VenturesSection() {
         <div className="text-center mb-8 md:mb-12 lg:mb-16 max-w-[850px] mx-auto" data-node-id="3:2060">
           <p className="font-montserrat text-[#353636] leading-[27px] tracking-[-0.22px]">
             <span className="font-semibold text-[18px] md:text-[20px]">
-              We don't just advise, we embed.
+              We don&apos;t just advise, we embed.
             </span>
             <br />
             <span className="font-medium text-[14px] md:text-[16px]">
@@ -30,10 +30,10 @@ export default function VenturesSection() {
         </div>
 
         {/* Puzzle Grid Container */}
-        <div className="relative w-full aspect-[16/10] max-w-[1000px] mx-auto">
+        <div className="relative w-full aspect-16/10 max-w-[1000px] mx-auto">
 
           {/* Top Left - Purple - inSTACK */}
-          <div className="absolute left-0 top-0 w-[49%] h-[49%] bg-gradient-to-br from-[#8b5cf6] to-[#7c3aed] rounded-tl-[32px] rounded-br-[80px] p-6 md:p-8 lg:p-10">
+          <div className="absolute left-0 top-0 w-[49%] h-[49%] bg-linear-to-br from-[#8b5cf6] to-[#7c3aed] rounded-tl-4xl rounded-br-[80px] p-6 md:p-8 lg:p-10">
             <h2 className="font-montserrat font-bold text-[24px] md:text-[32px] lg:text-[40px] text-white mb-2">
               inSTACK
             </h2>
@@ -46,7 +46,7 @@ export default function VenturesSection() {
           </div>
 
           {/* Top Right - Orange - inSURGE */}
-          <div className="absolute right-0 top-0 w-[49%] h-[49%] bg-gradient-to-bl from-[#f59e0b] to-[#d97706] rounded-tr-[32px] rounded-bl-[80px] p-6 md:p-8 lg:p-10 text-right">
+          <div className="absolute right-0 top-0 w-[49%] h-[49%] bg-linear-to-bl from-[#f59e0b] to-[#d97706] rounded-tr-4xl rounded-bl-[80px] p-6 md:p-8 lg:p-10 text-right">
             <h2 className="font-montserrat font-bold text-[24px] md:text-[32px] lg:text-[40px] text-white mb-2">
               inSURGE
             </h2>
@@ -59,7 +59,7 @@ export default function VenturesSection() {
           </div>
 
           {/* Bottom Left - Green - inSURE */}
-          <div className="absolute left-0 bottom-0 w-[49%] h-[49%] bg-gradient-to-tr from-[#10b981] to-[#059669] rounded-bl-[32px] rounded-tr-[80px] p-6 md:p-8 lg:p-10">
+          <div className="absolute left-0 bottom-0 w-[49%] h-[49%] bg-linear-to-tr from-[#10b981] to-[#059669] rounded-bl-4xl rounded-tr-[80px] p-6 md:p-8 lg:p-10">
             <h2 className="font-montserrat font-bold text-[24px] md:text-[32px] lg:text-[40px] text-white mb-2">
               inSURE
             </h2>
@@ -72,7 +72,7 @@ export default function VenturesSection() {
           </div>
 
           {/* Bottom Right - Blue - inVOLVE */}
-          <div className="absolute right-0 bottom-0 w-[49%] h-[49%] bg-gradient-to-tl from-[#3b82f6] to-[#2563eb] rounded-br-[32px] rounded-tl-[80px] p-6 md:p-8 lg:p-10 text-right">
+          <div className="absolute right-0 bottom-0 w-[49%] h-[49%] bg-linear-to-tl from-[#3b82f6] to-[#2563eb] rounded-br-4xl rounded-tl-[80px] p-6 md:p-8 lg:p-10 text-right">
             <h2 className="font-montserrat font-bold text-[24px] md:text-[32px] lg:text-[40px] text-white mb-2">
               inVOLVE
             </h2>

@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 export default function JourneyMetricsSection() {
   const metrics = [
@@ -30,12 +31,15 @@ export default function JourneyMetricsSection() {
       </div>
 
       {/* Background Illustration - Indian Landmarks */}
-      <div
-        className="absolute bottom-0 left-0 right-0 h-52 sm:h-64 lg:h-80 bg-contain bg-bottom bg-no-repeat"
-        style={{
-          backgroundImage: `url('/india-landmarks.svg')`,
-        }}
-      />
+      <div className="absolute bottom-0 left-0 right-0 h-52 sm:h-64 lg:h-80 pointer-events-none">
+        <Image
+          src="/india-landmarks.svg"
+          alt=""
+          fill
+          loading="lazy"
+          className="object-contain object-bottom"
+        />
+      </div>
 
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title with Brush Stroke */}

@@ -8,22 +8,22 @@ function MissionSection() {
       <div className="relative max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8">
         {/* Decorative Vector 1 - Top Left */}
         <div className="hidden md:block absolute top-[50px] left-[100px] w-[24px] h-[24px] opacity-60">
-          <Image src="/circle-vector-1.svg" alt="" width={24} height={24} className="w-full h-full" />
+          <Image src="/circle-vector-1.svg" alt="" width={24} height={24} loading="lazy" className="w-full h-full" />
         </div>
 
         {/* Decorative Vector 2 - Bottom Right */}
         <div className="hidden md:block absolute bottom-[20px] right-[-20px] w-[60px] h-[60px] opacity-40">
-          <Image src="/circle-vector-2.svg" alt="" width={60} height={60} className="w-full h-full" />
+          <Image src="/circle-vector-2.svg" alt="" width={60} height={60} loading="lazy" className="w-full h-full" />
         </div>
 
         {/* Decorative Vector 3 - Bottom Left Large Circle */}
         <div className="hidden lg:block absolute bottom-[-100px] left-[-100px] w-[250px] h-[250px] opacity-20">
-          <Image src="/bg-vector-2.svg" alt="" width={250} height={250} className="w-full h-full" />
+          <Image src="/bg-vector-2.svg" alt="" width={250} height={250} loading="lazy" className="w-full h-full" />
         </div>
 
         {/* Decorative Vector 4 - Small Dot */}
         <div className="hidden lg:block absolute top-[150px] left-[400px] w-[12px] h-[12px] opacity-50">
-          <Image src="/bg-vector-1.svg" alt="" width={12} height={12} className="w-full h-full" />
+          <Image src="/bg-vector-1.svg" alt="" width={12} height={12} loading="lazy" className="w-full h-full" />
         </div>
 
         {/* Main Content Grid */}
@@ -69,8 +69,8 @@ function MissionSection() {
               alt="India map"
               width={412}
               height={412}
+              loading="lazy"
               className="w-full h-full object-contain"
-              priority
             />
           </div>
         </div>
