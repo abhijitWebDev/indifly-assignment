@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 
 type Sector = 'payments' | 'financial' | 'logistics';
-type Brand = 'indipe' | 'indiconnect' | 'indinxt';
+type Brand = 'indipe' | 'indiconnect' | 'indinxt' | 'sec2pay' | 'indikendra' | 'indispeed';
 
 interface SectorData {
   id: Sector;
@@ -19,6 +19,7 @@ interface SectorData {
     features: string[];
     personImage: string;
     icons: { src: string; position: 'tl' | 'tr' | 'bl' | 'br' }[];
+    primaryButtonText: string;
   }[];
 }
 
@@ -48,64 +49,142 @@ const sectorsData: SectorData[] = [
           { src: '/Frame 1000001151.svg', position: 'tr' },
           { src: '/Frame 1000001153.svg', position: 'br' },
         ],
+        primaryButtonText: 'Install the App',
       },
       {
         id: 'indiconnect',
         label: 'Indiconnect',
-        category: 'Wealth tech',
+        category: 'B2B Payments',
         categoryGradient: 'from-[#164786] to-[#0252d4]',
-        title: 'Connect and grow your wealth',
-        description: 'Building connections in the financial ecosystem',
+        title: 'One-stop platform for payments, banking, and compliance',
+        description: 'Designed for SMEs and co-operatives. Indiconnect unifies essential financial services into one seamless stack.',
         features: [
-          'Network-based financial solutions',
-          'Community wealth building',
-          'Collaborative investment tools',
+          'UPI, Cards, Wallets, Netbanking',
+          'Virtual accounts & payouts',
+          'Automated reconciliation',
+          'KYC, KYB & credit rating tools',
+          'Tailored for businesses & co-operatives',
         ],
-        personImage: '/cheerful-indian-businessman.png',
+        personImage: '/business-man-crossed-hands.png',
         icons: [
-           { src: '/Frame 1000001149.svg', position: 'tl' },
+          { src: '/Frame 1000001149.svg', position: 'tl' },
           { src: '/Frame 1000001150.svg', position: 'bl' },
           { src: '/Frame 1000001151.svg', position: 'tr' },
-          { src: '/Frame 1000001153.svg', position: 'br' },
+          { src: '/phone-mockup-indiconnect.png', position: 'br' },
         ],
+        primaryButtonText: 'Install the App',
       },
       {
         id: 'indinxt',
         label: 'IndiNXT',
-        category: 'Next-gen Finance',
+        category: 'UPI Infrastructure',
         categoryGradient: 'from-[#164786] to-[#0252d4]',
-        title: 'The future of digital finance',
-        description: 'Innovation-driven financial solutions for tomorrow',
+        title: 'UPI infrastructure built for Bharat, ready for the world.',
+        description: 'IndiNXT powers banks, fintechs, and enterprises with secure, scalable, and intelligent payment switching solutions.',
         features: [
-          'AI-powered financial insights',
-          'Next-generation payment systems',
-          'Future-ready wealth management',
+          'UPI Acquiring & Issuing Switch',
+          'T-OTP Solutions',
+          'Fraud & risk management',
+          'Merchant management platform',
+          'Intelligent routing & high availability',
         ],
-        personImage: '/cheerful-indian-businessman.png',
+        personImage: '/front-view-indian-man.png',
         icons: [
-          { src: '/1000001148.svg', position: 'tl' },
-          { src: '/1000001150.svg', position: 'bl' },
-          { src: '/1000001151.svg', position: 'tr' },
-          { src: '/1000001153.svg', position: 'br' },
+          { src: '/Frame 1000001149.svg', position: 'tl' },
+          { src: '/Frame 1000001150.svg', position: 'bl' },
+          { src: '/Frame 1000001151.svg', position: 'tr' },
+          { src: '/Frame 1000001153.svg', position: 'br' },
         ],
+        primaryButtonText: 'Partner with us',
       },
     ],
   },
   {
     id: 'financial',
     label: 'Financial Services',
-    brands: [],
+    brands: [
+      {
+        id: 'sec2pay',
+        label: 'Sec2Pay',
+        category: 'Whitelabel Fintech Infrastructure',
+        categoryGradient: 'from-[#164786] to-[#0252d4]',
+        title: 'Sec2Pay empowers institutions to launch fintech services under their own brand',
+        description: 'From prepaid cards to payments, lending, and more. A compliant, modular platform to scale financial inclusion.',
+        features: [
+          'White-label payment solutions',
+          'Prepaid cards & wallets',
+          'Micro-ATM & AePS',
+          'Lending & credit enablement',
+          'Enterprise-grade compliance & security',
+        ],
+        personImage: '/joyful-woman-thumbs-up.png',
+        icons: [
+          { src: '/Frame 1000001149.svg', position: 'tl' },
+          { src: '/Frame 1000001150.svg', position: 'bl' },
+          { src: '/Frame 1000001151.svg', position: 'tr' },
+          { src: '/Frame 1000001153.svg', position: 'br' },
+        ],
+        primaryButtonText: 'Partner with us',
+      },
+      {
+        id: 'indikendra',
+        label: 'Indikendra',
+        category: 'Last mile digital banking',
+        categoryGradient: 'from-[#164786] to-[#0252d4]',
+        title: 'IndiKendra bridges financial access by offering last-mile digital and assisted services',
+        description: 'IndiKendra bridges financial access by offering last-mile digital and assisted services, ensuring inclusion across towns and villages.',
+        features: [
+          'White-label payment solutions',
+          'Prepaid cards & wallets',
+          'Micro-ATM & AePS',
+          'Lending & credit enablement',
+          'Enterprise-grade compliance & security',
+        ],
+        personImage: '/person-traditional-clothing.png',
+        icons: [
+          { src: '/Frame 1000001149.svg', position: 'tl' },
+          { src: '/Frame 1000001150.svg', position: 'bl' },
+          { src: '/Frame 1000001151.svg', position: 'tr' },
+          { src: '/Frame 1000001153.svg', position: 'br' },
+        ],
+        primaryButtonText: 'Partner with us',
+      },
+    ],
   },
   {
     id: 'logistics',
     label: 'ONDC Logistics',
-    brands: [],
+    brands: [
+      {
+        id: 'indispeed',
+        label: 'IndiSpeed',
+        category: 'Smarter Logistics for Bharat',
+        categoryGradient: 'from-[#164786] to-[#0252d4]',
+        title: 'ONDC-powered courier and delivery orchestration platform.',
+        description: 'IndiSpeed enables D2C brands, enterprises, and sellers to ship faster, smarter, and at scale.',
+        features: [
+          'API-first logistics integration',
+          'Bulk dispatch via enterprise dashboard',
+          'ONDC-ready multi-channel plugins',
+          'Intercity & hyperlocal delivery',
+          'Transparent pricing & SLA tracking',
+        ],
+        personImage: '/delivery-man-hand-truck.png',
+        icons: [
+          { src: '/Frame 1000001149.svg', position: 'tl' },
+          { src: '/Frame 1000001150.svg', position: 'bl' },
+          { src: '/Frame 1000001151.svg', position: 'tr' },
+          { src: '/Frame 1000001153.svg', position: 'br' },
+        ],
+        primaryButtonText: 'Partner with us',
+      },
+    ],
   },
 ];
 
 function SectorsSection() {
   const [activeSector, setActiveSector] = useState<Sector>('payments');
-  const [activeBrand, setActiveBrand] = useState<Brand>('indipe');
+  const [activeBrand, setActiveBrand] = useState<Brand>('indiconnect');
 
   const currentSector = sectorsData.find((s) => s.id === activeSector);
   const currentBrand = currentSector?.brands.find((b) => b.id === activeBrand);
@@ -230,7 +309,7 @@ function SectorsSection() {
               {/* Buttons */}
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <button className="bg-[#ff681e] border border-[#e04a00] text-white px-6 py-3 rounded-[50px] font-montserrat font-semibold text-[12px] h-[54px] w-full sm:w-[162px] hover:bg-[#e04a00] transition-colors">
-                  Install the App
+                  {currentBrand.primaryButtonText}
                 </button>
                 <button className="border border-[#353636] text-[#353636] px-6 py-3 rounded-[50px] font-montserrat font-semibold text-[12px] h-[54px] w-full sm:w-[162px] hover:bg-[#353636]/10 transition-colors flex items-center justify-center gap-2">
                   <span>Explore More</span>
@@ -269,27 +348,8 @@ function SectorsSection() {
                 />
               </div>
 
-              {/* Person Image - in middle layer */}
-              <div className="absolute left-1/2 -translate-x-1/2 lg:left-[41px] lg:translate-x-0 bottom-0 w-[250px] h-[235px] sm:w-[300px] sm:h-[282px] lg:w-[350px] lg:h-[329px] overflow-hidden pointer-events-none z-[5]">
-                <div className="absolute inset-0">
-                  <Image
-                    src={currentBrand.personImage}
-                    alt="Business professional"
-                    width={495}
-                    height={330}
-                    className="absolute max-w-none"
-                    style={{
-                      height: '100.15%',
-                      width: '141.3%',
-                      left: '-21.74%',
-                      top: '-0.08%'
-                    }}
-                  />
-                </div>
-              </div>
-
-              {/* Top-Right Icon (medium, in front of person) */}
-              <div className="absolute right-[10%] sm:right-[12%] lg:left-[243px] top-[20px] sm:top-[30px] lg:top-[40px] w-[75px] h-[75px] sm:w-[90px] sm:h-[90px] lg:w-[106px] lg:h-[106px] z-[10]">
+              {/* Top-Right Icon (medium, behind person) */}
+              <div className="absolute right-[10%] sm:right-[12%] lg:left-[243px] top-[20px] sm:top-[30px] lg:top-[0px] w-[75px] h-[75px] sm:w-[90px] sm:h-[90px] lg:w-[106px] lg:h-[106px] z-[1]">
                 <Image
                   src={currentBrand.icons.find(i => i.position === 'tr')?.src || '/Frame 1000001151.svg'}
                   alt=""
@@ -299,15 +359,86 @@ function SectorsSection() {
                 />
               </div>
 
-              {/* Bottom-Right Icon (medium, in front of person) */}
-              <div className="absolute right-[5%] sm:right-[8%] lg:left-[306px] top-[130px] sm:top-[155px] lg:top-[177px] w-[75px] h-[75px] sm:w-[90px] sm:h-[90px] lg:w-[106px] lg:h-[106px] z-[10]">
-                <Image
-                  src={currentBrand.icons.find(i => i.position === 'br')?.src || '/Frame 1000001153.svg'}
-                  alt=""
-                  width={106}
-                  height={106}
-                  className="object-contain"
-                />
+              {/* Person Image - in middle layer */}
+              <div className={`absolute left-1/2 -translate-x-1/2 lg:translate-x-0 ${
+                activeBrand === 'indinxt'
+                  ? 'lg:left-[59px] bottom-0 lg:bottom-auto lg:top-[81px] w-[250px] h-[280px] sm:w-[280px] sm:h-[300px] lg:w-[308px] lg:h-[314px]'
+                  : activeBrand === 'sec2pay'
+                  ? 'lg:left-[46px] bottom-0 lg:bottom-auto lg:top-[57px] w-[250px] h-[300px] sm:w-[280px] sm:h-[320px] lg:w-[314px] lg:h-[340px]'
+                  : activeBrand === 'indikendra'
+                  ? 'lg:left-[29px] bottom-0 w-[250px] h-[320px] sm:w-[290px] sm:h-[340px] lg:w-[333px] lg:h-[356px]'
+                  : activeBrand === 'indispeed'
+                  ? 'lg:left-[49px] bottom-0 w-[240px] h-[330px] sm:w-[256px] sm:h-[350px] lg:w-[272px] lg:h-[364px]'
+                  : 'lg:left-[59px] bottom-0 lg:bottom-auto lg:top-[95px] w-[250px] h-[280px] sm:w-[265px] sm:h-[290px] lg:w-[280px] lg:h-[300px]'
+              } overflow-visible pointer-events-none z-[5]`}>
+                <div className="absolute inset-0 overflow-hidden">
+                  <Image
+                    src={currentBrand.personImage}
+                    alt="Business professional"
+                    width={495}
+                    height={330}
+                    className="absolute max-w-none object-cover"
+                    style={
+                      activeBrand === 'indinxt'
+                        ? {
+                            height: '100%',
+                            width: '152.02%',
+                            left: '0%',
+                            top: '0%'
+                          }
+                        : activeBrand === 'sec2pay'
+                        ? {
+                            height: '106.75%',
+                            width: '173.6%',
+                            left: '-62.77%',
+                            top: '-6.65%'
+                          }
+                        : activeBrand === 'indikendra'
+                        ? {
+                            height: '163.7%',
+                            width: '116.88%',
+                            left: '-16.88%',
+                            top: '-11.55%'
+                          }
+                        : activeBrand === 'indispeed'
+                        ? {
+                            height: '208.47%',
+                            width: '186.24%',
+                            left: '-47.38%',
+                            top: '-52.44%'
+                          }
+                        : {
+                            height: '129.83%',
+                            width: '209.15%',
+                            left: '-68.63%',
+                            top: '-4.57%'
+                          }
+                    }
+                  />
+                </div>
+              </div>
+
+              {/* Bottom-Right Icon/Image (medium, in front of person) */}
+              <div className="absolute right-[5%] sm:right-[8%] lg:left-[202px] top-[100px] sm:top-[120px] lg:top-[123px] w-[150px] h-[100px] sm:w-[180px] sm:h-[115px] lg:w-[215px] lg:h-[129px] z-1">
+                {currentBrand.icons.find(i => i.position === 'br')?.src.endsWith('.png') ? (
+                  <div className="w-full h-full rounded-[16px] overflow-hidden shadow-lg">
+                    <Image
+                      src={currentBrand.icons.find(i => i.position === 'br')?.src || '/phone-mockup-indiconnect.png'}
+                      alt=""
+                      width={215}
+                      height={129}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                ) : (
+                  <Image
+                    src={currentBrand.icons.find(i => i.position === 'br')?.src || '/Frame 1000001153.svg'}
+                    alt=""
+                    width={106}
+                    height={106}
+                    className="object-contain"
+                  />
+                )}
               </div>
             </div>
           </div>

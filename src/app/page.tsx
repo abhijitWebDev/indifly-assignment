@@ -1,5 +1,6 @@
 import ContactSection from "@/components/sections/ContactSection";
 import HeroSection from "@/components/sections/HeroSection";
+import JourneyMetricsSection from "@/components/sections/JourneyMetricsSection";
 import MissionSection from "@/components/sections/MissionSection";
 import SectorsSection from "@/components/sections/SectorsSection";
 import Image from "next/image";
@@ -13,6 +14,7 @@ export default function Home() {
     <HeroSection />
     <MissionSection />
     <SectorsSection />
+    <JourneyMetricsSection />
     <ContactSection />
   </div>
 </main>
