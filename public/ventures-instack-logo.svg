@@ -1,0 +1,9 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Product & Technology logo (Instack) -->
+  <rect width="160" height="160" rx="12" fill="#F0F4FF"/>
+  <rect x="40" y="50" width="80" height="60" rx="4" fill="none" stroke="#0066FF" stroke-width="2.5"/>
+  <circle cx="80" cy="80" r="12" fill="#0066FF"/>
+  <rect x="50" y="120" width="60" height="8" fill="#0066FF" opacity="0.6"/>
+  <path d="M 45 65 L 55 55" stroke="#0066FF" stroke-width="2" opacity="0.4"/>
+  <path d="M 115 65 L 105 55" stroke="#0066FF" stroke-width="2" opacity="0.4"/>
+</svg>

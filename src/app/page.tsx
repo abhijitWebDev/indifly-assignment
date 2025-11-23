@@ -5,6 +5,7 @@ import InsightsSection from "@/components/sections/InsightsSection";
 import JourneyMetricsSection from "@/components/sections/JourneyMetricsSection";
 import MissionSection from "@/components/sections/MissionSection";
 import SectorsSection from "@/components/sections/SectorsSection";
+import VenturesSection from "@/components/sections/VenturesSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
     <HeroSection />
     <MissionSection />
     <SectorsSection />
+    <VenturesSection />
     <JourneyMetricsSection />
     <InsightsSection />
     <ContactSection />

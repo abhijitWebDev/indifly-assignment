@@ -1,0 +1,8 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- People & Culture logo (Insure) -->
+  <rect width="160" height="160" rx="12" fill="#F0F4FF"/>
+  <circle cx="80" cy="55" r="18" fill="#0066FF"/>
+  <path d="M 60 85 Q 60 75 80 75 Q 100 75 100 85 L 100 110 Q 100 120 90 120 L 70 120 Q 60 120 60 110 Z" fill="#0066FF" opacity="0.8"/>
+  <circle cx="130" cy="70" r="12" fill="#0066FF" opacity="0.6"/>
+  <path d="M 120 95 Q 120 90 130 90 Q 140 90 140 95 L 140 110 Q 140 115 135 115 L 125 115 Q 120 115 120 110 Z" fill="#0066FF" opacity="0.5"/>
+</svg>

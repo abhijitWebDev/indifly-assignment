@@ -1,0 +1,5 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bottom-left decorative vector -->
+  <path d="M 10 10 Q 40 40 60 60 Q 80 80 110 110" stroke="#0066FF" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="110" cy="110" r="6" fill="#0066FF" opacity="0.6"/>
+</svg>

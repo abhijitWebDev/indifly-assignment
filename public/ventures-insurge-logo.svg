@@ -1,0 +1,9 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Marketing & Growth logo (Insurge) -->
+  <rect width="160" height="160" rx="12" fill="#F0F4FF"/>
+  <path d="M 50 110 L 70 70 L 85 85 L 110 50" fill="none" stroke="#0066FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="70" cy="70" r="5" fill="#0066FF"/>
+  <circle cx="85" cy="85" r="5" fill="#0066FF"/>
+  <circle cx="110" cy="50" r="5" fill="#0066FF"/>
+  <path d="M 50 115 L 110 115" stroke="#0066FF" stroke-width="2" opacity="0.5"/>
+</svg>
