@@ -1,5 +1,7 @@
 import ContactSection from "@/components/sections/ContactSection";
+import Footer from "@/components/sections/Footer";
 import HeroSection from "@/components/sections/HeroSection";
+import InsightsSection from "@/components/sections/InsightsSection";
 import JourneyMetricsSection from "@/components/sections/JourneyMetricsSection";
 import MissionSection from "@/components/sections/MissionSection";
 import SectorsSection from "@/components/sections/SectorsSection";
@@ -15,7 +17,9 @@ export default function Home() {
     <MissionSection />
     <SectorsSection />
     <JourneyMetricsSection />
+    <InsightsSection />
     <ContactSection />
+    <Footer />
   </div>
 </main>
   );
